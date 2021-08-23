@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:peliculas/screens/details_screen.dart';
-import 'package:peliculas/screens/home_screen.dart';
+import 'screens/screens.dart';
+
 
 class MyApp extends StatelessWidget {
   @override
@@ -13,6 +13,13 @@ class MyApp extends StatelessWidget {
         'home': (_) => HomeScreen(),
         'details': (_) => DetailsScreen(),
       },
+      theme: ThemeData(
+        appBarTheme: AppBarTheme(
+          centerTitle: true,
+          elevation: 0.0,
+          color: Colors.indigo
+        )
+      ),
     );
   }
 }
