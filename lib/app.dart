@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/screens.dart';
 
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,12 +13,8 @@ class MyApp extends StatelessWidget {
         'details': (_) => DetailsScreen(),
       },
       theme: ThemeData(
-        appBarTheme: AppBarTheme(
-          centerTitle: true,
-          elevation: 0.0,
-          color: Colors.indigo
-        )
-      ),
+          appBarTheme: AppBarTheme(
+              centerTitle: true, elevation: 0.0, color: Colors.indigo)),
     );
   }
 }
